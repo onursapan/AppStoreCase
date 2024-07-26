@@ -18,6 +18,11 @@
 		982455862C544AA4007FB460 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455852C544AA4007FB460 /* ServiceError.swift */; };
 		982455882C544B4A007FB460 /* AppsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455872C544B4A007FB460 /* AppsModel.swift */; };
 		9824558A2C544B5D007FB460 /* AppsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455892C544B5D007FB460 /* AppsService.swift */; };
+		982455922C544F8D007FB460 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455912C544F8D007FB460 /* DashboardViewController.swift */; };
+		982455942C544FA7007FB460 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455932C544FA7007FB460 /* DashboardPresenter.swift */; };
+		982455962C544FB5007FB460 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455952C544FB5007FB460 /* DashboardRouter.swift */; };
+		982455982C544FC7007FB460 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455972C544FC7007FB460 /* DashboardInteractor.swift */; };
+		9824559A2C544FDC007FB460 /* DashboardLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455992C544FDC007FB460 /* DashboardLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		982455852C544AA4007FB460 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		982455872C544B4A007FB460 /* AppsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsModel.swift; sourceTree = "<group>"; };
 		982455892C544B5D007FB460 /* AppsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsService.swift; sourceTree = "<group>"; };
+		982455912C544F8D007FB460 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		982455932C544FA7007FB460 /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		982455952C544FB5007FB460 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		982455972C544FC7007FB460 /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		982455992C544FDC007FB460 /* DashboardLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +76,11 @@
 		982455592C543B2A007FB460 /* AppStoreCase */ = {
 			isa = PBXGroup;
 			children = (
+				9824558E2C544EA9007FB460 /* Scenes */,
 				982455822C544A6A007FB460 /* Entity */,
 				9824557B2C544969007FB460 /* Network */,
 				982455702C543DC6007FB460 /* Resources */,
 				9824556E2C543D74007FB460 /* AppDelegates */,
-				982455652C543B2C007FB460 /* LaunchScreen.storyboard */,
 				982455682C543B2C007FB460 /* Info.plist */,
 			);
 			path = AppStoreCase;
@@ -140,6 +150,35 @@
 				982455872C544B4A007FB460 /* AppsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9824558E2C544EA9007FB460 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				982455902C544F41007FB460 /* Dashboard */,
+				9824558F2C544F1F007FB460 /* Launch */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9824558F2C544F1F007FB460 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				982455652C543B2C007FB460 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		982455902C544F41007FB460 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				982455912C544F8D007FB460 /* DashboardViewController.swift */,
+				982455932C544FA7007FB460 /* DashboardPresenter.swift */,
+				982455952C544FB5007FB460 /* DashboardRouter.swift */,
+				982455972C544FC7007FB460 /* DashboardInteractor.swift */,
+				982455992C544FDC007FB460 /* DashboardLauncher.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				982455882C544B4A007FB460 /* AppsModel.swift in Sources */,
+				982455962C544FB5007FB460 /* DashboardRouter.swift in Sources */,
+				982455922C544F8D007FB460 /* DashboardViewController.swift in Sources */,
 				9824558A2C544B5D007FB460 /* AppsService.swift in Sources */,
 				982455862C544AA4007FB460 /* ServiceError.swift in Sources */,
+				982455982C544FC7007FB460 /* DashboardInteractor.swift in Sources */,
+				982455942C544FA7007FB460 /* DashboardPresenter.swift in Sources */,
 				982455812C5449FE007FB460 /* NetworkManager.swift in Sources */,
+				9824559A2C544FDC007FB460 /* DashboardLauncher.swift in Sources */,
 				9824555B2C543B2A007FB460 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
