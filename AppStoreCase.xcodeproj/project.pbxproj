@@ -23,6 +23,10 @@
 		982455962C544FB5007FB460 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455952C544FB5007FB460 /* DashboardRouter.swift */; };
 		982455982C544FC7007FB460 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455972C544FC7007FB460 /* DashboardInteractor.swift */; };
 		9824559A2C544FDC007FB460 /* DashboardLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455992C544FDC007FB460 /* DashboardLauncher.swift */; };
+		9824559D2C5457B0007FB460 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824559C2C5457B0007FB460 /* UIViewController+Extension.swift */; };
+		982455A22C54583C007FB460 /* AppsRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455A12C54583C007FB460 /* AppsRowCell.swift */; };
+		982455A52C5458DE007FB460 /* GetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455A42C5458DE007FB460 /* GetButton.swift */; };
+		982455A92C545B4E007FB460 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455A82C545B4E007FB460 /* VerticalStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		982455952C544FB5007FB460 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
 		982455972C544FC7007FB460 /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
 		982455992C544FDC007FB460 /* DashboardLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardLauncher.swift; sourceTree = "<group>"; };
+		9824559C2C5457B0007FB460 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		982455A12C54583C007FB460 /* AppsRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsRowCell.swift; sourceTree = "<group>"; };
+		982455A42C5458DE007FB460 /* GetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetButton.swift; sourceTree = "<group>"; };
+		982455A82C545B4E007FB460 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,9 @@
 		982455592C543B2A007FB460 /* AppStoreCase */ = {
 			isa = PBXGroup;
 			children = (
+				982455A62C545B2C007FB460 /* Utilities */,
+				9824559E2C5457F3007FB460 /* UIComponents */,
+				9824559B2C54578D007FB460 /* Extensions */,
 				9824558E2C544EA9007FB460 /* Scenes */,
 				982455822C544A6A007FB460 /* Entity */,
 				9824557B2C544969007FB460 /* Network */,
@@ -181,6 +192,63 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		9824559B2C54578D007FB460 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9824559C2C5457B0007FB460 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9824559E2C5457F3007FB460 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				982455A32C5458A2007FB460 /* CustomViews */,
+				9824559F2C545817007FB460 /* Cell */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9824559F2C545817007FB460 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				982455A02C545828007FB460 /* Apps */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		982455A02C545828007FB460 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				982455A12C54583C007FB460 /* AppsRowCell.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		982455A32C5458A2007FB460 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				982455A42C5458DE007FB460 /* GetButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		982455A62C545B2C007FB460 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				982455A72C545B39007FB460 /* Helpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		982455A72C545B39007FB460 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				982455A82C545B4E007FB460 /* VerticalStackView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,15 +330,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				982455882C544B4A007FB460 /* AppsModel.swift in Sources */,
+				9824559D2C5457B0007FB460 /* UIViewController+Extension.swift in Sources */,
 				982455962C544FB5007FB460 /* DashboardRouter.swift in Sources */,
 				982455922C544F8D007FB460 /* DashboardViewController.swift in Sources */,
+				982455A52C5458DE007FB460 /* GetButton.swift in Sources */,
 				9824558A2C544B5D007FB460 /* AppsService.swift in Sources */,
 				982455862C544AA4007FB460 /* ServiceError.swift in Sources */,
 				982455982C544FC7007FB460 /* DashboardInteractor.swift in Sources */,
 				982455942C544FA7007FB460 /* DashboardPresenter.swift in Sources */,
+				982455A22C54583C007FB460 /* AppsRowCell.swift in Sources */,
 				982455812C5449FE007FB460 /* NetworkManager.swift in Sources */,
 				9824559A2C544FDC007FB460 /* DashboardLauncher.swift in Sources */,
 				9824555B2C543B2A007FB460 /* AppDelegate.swift in Sources */,
+				982455A92C545B4E007FB460 /* VerticalStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
