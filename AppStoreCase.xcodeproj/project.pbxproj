@@ -14,6 +14,10 @@
 		982455752C5441E2007FB460 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 982455742C5441E2007FB460 /* SnapKit-Dynamic */; };
 		982455782C544205007FB460 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 982455772C544205007FB460 /* SDWebImage */; };
 		9824557A2C544205007FB460 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 982455792C544205007FB460 /* SDWebImageMapKit */; };
+		982455812C5449FE007FB460 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455802C5449FE007FB460 /* NetworkManager.swift */; };
+		982455862C544AA4007FB460 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455852C544AA4007FB460 /* ServiceError.swift */; };
+		982455882C544B4A007FB460 /* AppsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455872C544B4A007FB460 /* AppsModel.swift */; };
+		9824558A2C544B5D007FB460 /* AppsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982455892C544B5D007FB460 /* AppsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		982455632C543B2C007FB460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982455662C543B2C007FB460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		982455682C543B2C007FB460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982455802C5449FE007FB460 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		982455852C544AA4007FB460 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		982455872C544B4A007FB460 /* AppsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsModel.swift; sourceTree = "<group>"; };
+		982455892C544B5D007FB460 /* AppsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		982455592C543B2A007FB460 /* AppStoreCase */ = {
 			isa = PBXGroup;
 			children = (
+				982455822C544A6A007FB460 /* Entity */,
+				9824557B2C544969007FB460 /* Network */,
 				982455702C543DC6007FB460 /* Resources */,
 				9824556E2C543D74007FB460 /* AppDelegates */,
 				982455652C543B2C007FB460 /* LaunchScreen.storyboard */,
@@ -80,6 +90,56 @@
 				982455632C543B2C007FB460 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9824557B2C544969007FB460 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9824557C2C544981007FB460 /* Service */,
+				9824557D2C544987007FB460 /* Manager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9824557C2C544981007FB460 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				982455892C544B5D007FB460 /* AppsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9824557D2C544987007FB460 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				982455802C5449FE007FB460 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		982455822C544A6A007FB460 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				982455832C544A7E007FB460 /* Enum */,
+				982455842C544A8C007FB460 /* Model */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		982455832C544A7E007FB460 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				982455852C544AA4007FB460 /* ServiceError.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		982455842C544A8C007FB460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				982455872C544B4A007FB460 /* AppsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982455882C544B4A007FB460 /* AppsModel.swift in Sources */,
+				9824558A2C544B5D007FB460 /* AppsService.swift in Sources */,
+				982455862C544AA4007FB460 /* ServiceError.swift in Sources */,
+				982455812C5449FE007FB460 /* NetworkManager.swift in Sources */,
 				9824555B2C543B2A007FB460 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
