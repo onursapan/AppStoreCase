@@ -22,6 +22,7 @@ final class DashboardRouter: DashboardRouterProtocol {
     }
     
     func toDetail(id: String) {
-        
+        let detailVC = AppDetailLauncher.start(id: id)
+        self.view?.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
